@@ -141,7 +141,13 @@ color: #121417;
 
 .__prevDelButton{
     font-size: 20px;
+    background-color: transparent;
+}
+
+.__prevDelButton:hover{
     color: rgb(107, 35, 35);
+    transition: all .3s ease;
+    transform: scale(1.1);
 }
 
 .__inviteBtnCon{

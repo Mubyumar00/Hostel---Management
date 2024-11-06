@@ -10,6 +10,7 @@ const EditRoleModal = ({user, onUpdateRole, onClose}) => {
 
     const handleSubmit = () => {
         onUpdateRole(user.id, newRole);
+        onClose()
     }
 
   return (
