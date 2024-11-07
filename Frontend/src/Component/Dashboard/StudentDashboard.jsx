@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SideBar from "./SideBar";
 
 const studentData = [
   {
@@ -56,7 +57,17 @@ const StudentDashboard = () => {
     );
     updateFilteredData(updatedFilteredData);
   };
-  return <div></div>;
+
+  return (
+    <div>
+    {isSideBarToggled && (
+      <div className="mobile-side-nav">
+        <SideBar />
+      </div>
+    )}
+    <div className=""></div>
+  </div>
+  )
 };
 
 export default StudentDashboard;
